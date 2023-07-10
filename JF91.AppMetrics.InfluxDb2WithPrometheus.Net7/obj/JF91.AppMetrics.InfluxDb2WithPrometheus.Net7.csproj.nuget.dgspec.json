@@ -1,0 +1,181 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7.csproj",
+        "projectName": "JF91.AppMetrics.InfluxDb2WithPrometheus.Net7",
+        "projectPath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7.csproj",
+        "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj": {
+                "projectPath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj",
+        "projectName": "JF91.AppMetrics.InfluxDb2WithPrometheus",
+        "projectPath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj",
+        "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "App.Metrics.AspNetCore": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.AspNetCore.All": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.Formatters.InfluxDB": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.Formatters.Prometheus": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.Reporting.InfluxDB": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

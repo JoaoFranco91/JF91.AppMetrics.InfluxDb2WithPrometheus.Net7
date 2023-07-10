@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>JF91.AppMetrics.InfluxDb2WithPrometheus</Title>
+        <Description>Use this to easily add App.Metrics to your project to send metrics to an InfluxDB2 instance with Prometheus Text Output Formatter (/metrics-text)</Description>
+        <Copyright>João Franco</Copyright>
+        <PackageLicenseUrl>https://opensource.org/license/bsd-3-clause/</PackageLicenseUrl>
+        <PackageTags>appmetrics,metrics,influxdb,influxdb2,prometheus</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="App.Metrics.AspNetCore" Version="4.3.0" />
+      <PackageReference Include="App.Metrics.AspNetCore.All" Version="4.3.0" />
+      <PackageReference Include="App.Metrics.Formatters.InfluxDB" Version="4.3.0" />
+      <PackageReference Include="App.Metrics.Formatters.Prometheus" Version="4.3.0" />
+      <PackageReference Include="App.Metrics.Reporting.InfluxDB" Version="4.3.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+</Project>
