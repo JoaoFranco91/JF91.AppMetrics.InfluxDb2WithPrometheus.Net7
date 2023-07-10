@@ -4,6 +4,13 @@ The setup is very straightforward, just install the Nuget Package, add the confi
 
 Please follow the instructions carefully.
 
+#### Install Nuget:
+```
+dotnet add package JF91.AppMetricsInfluxDb2WithPrometheus --version 1.0.0
+```
+
+<br>
+
 #### 1 - Add this section to your ```appsettings.json``` and modify it to your needs:
 
 ```

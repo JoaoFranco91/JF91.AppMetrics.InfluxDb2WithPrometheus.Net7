@@ -9,6 +9,8 @@
         <Copyright>João Franco</Copyright>
         <PackageLicenseUrl>https://opensource.org/license/bsd-3-clause/</PackageLicenseUrl>
         <PackageTags>appmetrics,metrics,influxdb,influxdb2,prometheus</PackageTags>
+        <PackageProjectUrl>https://github.com/JoaoFranco91/JF91.AppMetrics.InfluxDb2WithPrometheus.Net7</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/JoaoFranco91/JF91.AppMetrics.InfluxDb2WithPrometheus.Net7</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
