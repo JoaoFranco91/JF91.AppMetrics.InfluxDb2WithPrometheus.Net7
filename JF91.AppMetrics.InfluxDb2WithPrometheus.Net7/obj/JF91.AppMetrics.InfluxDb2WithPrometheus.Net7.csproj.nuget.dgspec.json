@@ -87,7 +87,7 @@
       }
     },
     "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj",
         "projectName": "JF91.AppMetrics.InfluxDb2WithPrometheus",

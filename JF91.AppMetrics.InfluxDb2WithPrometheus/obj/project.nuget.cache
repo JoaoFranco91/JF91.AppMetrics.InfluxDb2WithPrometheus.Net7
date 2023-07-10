@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "odKdL2eo5VV2P7AQOmaJ/lkNhLrQw9+5gCqn/bBqLRFUZgoDg46kmvcm7xcq0CVTgW2yJ32J3dgABOaW13XSKQ==",
+  "dgSpecHash": "Gqq3hVS6uoNvg4fIdc9pMIwxttItcRSF8GhIJCAQo3hR1ZVkf9bF0+6lwwVvLYn4wn80C/Uo8gSYGEZgZshfZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus\\JF91.AppMetrics.InfluxDb2WithPrometheus.csproj",
   "expectedPackageFiles": [

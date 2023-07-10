@@ -857,7 +857,7 @@
           }
         }
       },
-      "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.0": {
+      "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -2168,7 +2168,7 @@
         "version.txt"
       ]
     },
-    "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.0": {
+    "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.2": {
       "type": "project",
       "path": "../JF91.AppMetrics.InfluxDb2WithPrometheus/JF91.AppMetrics.InfluxDb2WithPrometheus.csproj",
       "msbuildProject": "../JF91.AppMetrics.InfluxDb2WithPrometheus/JF91.AppMetrics.InfluxDb2WithPrometheus.csproj"
@@ -2176,7 +2176,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "JF91.AppMetrics.InfluxDb2WithPrometheus >= 1.0.0",
+      "JF91.AppMetrics.InfluxDb2WithPrometheus >= 1.0.2",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
