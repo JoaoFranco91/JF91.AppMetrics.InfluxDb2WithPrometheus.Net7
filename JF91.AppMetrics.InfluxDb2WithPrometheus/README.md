@@ -6,7 +6,7 @@ Please follow the instructions carefully.
 
 #### Install Nuget:
 ```
-dotnet add package JF91.AppMetricsInfluxDb2WithPrometheus --version 1.0.0
+dotnet add package JF91.AppMetrics.InfluxDb2WithPrometheus --version 1.0.0
 ```
 
 <br>

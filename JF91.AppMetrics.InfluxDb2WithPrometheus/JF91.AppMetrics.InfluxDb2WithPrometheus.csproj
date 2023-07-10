@@ -11,6 +11,7 @@
         <PackageTags>appmetrics,metrics,influxdb,influxdb2,prometheus</PackageTags>
         <PackageProjectUrl>https://github.com/JoaoFranco91/JF91.AppMetrics.InfluxDb2WithPrometheus.Net7</PackageProjectUrl>
         <RepositoryUrl>https://github.com/JoaoFranco91/JF91.AppMetrics.InfluxDb2WithPrometheus.Net7</RepositoryUrl>
+        <Version>1.0.2</Version>
     </PropertyGroup>
 
     <ItemGroup>

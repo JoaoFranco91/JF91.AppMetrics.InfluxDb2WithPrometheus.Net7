@@ -29,51 +29,54 @@ public class ResponsesSizeMiddleware
         {
             var httpMethod = context.Request.Method.ToUpperInvariant();
 
-            if (httpMethod == "GET")
+            if (httpMethod != "GET")
             {
-                using (var buffer = new MemoryStream())
-                {
-                    var response = context.Response;
+                await _next(context);
+                return;
+            }
 
-                    var bodyStream = response.Body;
-                    response.Body = buffer;
+            using (var buffer = new MemoryStream())
+            {
+                var response = context.Response;
 
-                    await _next(context);
+                var bodyStream = response.Body;
+                response.Body = buffer;
 
-                    var tags = new MetricTags
-                    (
-                        new[]
-                        {
-                            "method",
-                            "path",
-                            "user"
-                        },
-                        new[]
-                        {
-                            context.Request.Method,
-                            context.Request.Path.Value,
-                            context.User.GetEmail() ??
-                            context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
-                        }
-                    );
+                await _next(context);
 
-                    var getRequestSize = new HistogramOptions
+                var tags = new MetricTags
+                (
+                    new[]
                     {
-                        Name = "http_responses_size",
-                        Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
-                        MeasurementUnit = Unit.Bytes,
-                        Tags = tags
-                    };
+                        "method",
+                        "path",
+                        "user"
+                    },
+                    new[]
+                    {
+                        context.Request.Method,
+                        context.Request.Path.Value,
+                        context.User.GetEmail() ??
+                        context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
+                    }
+                );
 
-                    _metrics.Measure.Histogram.Update
-                    (
-                        getRequestSize,
-                        response.ContentLength ?? buffer.Length
-                    );
+                var getRequestSize = new HistogramOptions
+                {
+                    Name = "http_responses_size",
+                    Context = Environment.GetEnvironmentVariable("APPLICATION_NAME"),
+                    MeasurementUnit = Unit.Bytes,
+                    Tags = tags
+                };
 
-                    buffer.Position = 0;
-                    await buffer.CopyToAsync(bodyStream);
-                }
+                _metrics.Measure.Histogram.Update
+                (
+                    getRequestSize,
+                    response.ContentLength ?? buffer.Length
+                );
+
+                buffer.Position = 0;
+                await buffer.CopyToAsync(bodyStream);
             }
         }
         catch (Exception ex)
