@@ -9,15 +9,23 @@ using Microsoft.Extensions.Configuration;
 
 public static class InfluxDb2Extensions
 {
+    public static Action<InfluxDb2Options> Action { get; }
+    
     public static IWebHostBuilder AddInfluxDb2AppMetrics
     (
         this IWebHostBuilder host,
-        IConfiguration config
+        IConfiguration config,
+        Action<InfluxDb2Options> options = null
     )
     {
         var influxOptions = new MetricsReportingInfluxDb2Options();
         config.GetSection(nameof(MetricsReportingInfluxDb2Options)).Bind(influxOptions);
         influxOptions.MetricsOutputFormatter = new MetricsInfluxDbLineProtocolOutputFormatter();
+
+        if (options != null)
+        {
+            options(influxOptions.InfluxDb2);
+        }
 
         var metrics = App.Metrics.AppMetrics.CreateDefaultBuilder()
             .Configuration.ReadFrom(config)

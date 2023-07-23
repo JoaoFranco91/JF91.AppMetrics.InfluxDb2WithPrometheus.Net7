@@ -15,6 +15,16 @@ builder.WebHost
     .AddInfluxDb2AppMetrics(builder.Configuration)
     .AddPrometheusAppMetrics();
 
+builder.WebHost
+    .AddInfluxDb2AppMetrics(builder.Configuration, options =>
+    {
+        options.BaseUri = new Uri(@"http://www.test.com");
+        options.Organization = "Test";
+        options.Bucket = "Test";
+        options.Token = "Test";
+    })
+    .AddPrometheusAppMetrics();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

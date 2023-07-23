@@ -6,7 +6,7 @@ Please follow the instructions carefully.
 
 #### Install Nuget:
 ```
-dotnet add package JF91.AppMetrics.InfluxDb2WithPrometheus --version 1.0.2
+dotnet add package JF91.AppMetrics.InfluxDb2WithPrometheus
 ```
 
 <br>
@@ -62,6 +62,21 @@ builder.Services.AddMetricsServices();
 builder.WebHost
     .AddInfluxDb2AppMetrics(builder.Configuration)
     .AddPrometheusAppMetrics();
+```
+
+#### 3.2 - (Optional) Customize settings:
+###### Custom options are optional which means that you can mix options from appsettings.json with the ones defined below
+```
+builder.Services.AddMetricsServices();
+builder.WebHost
+.AddInfluxDb2AppMetrics(builder.Configuration, options =>
+{
+    options.BaseUri = new Uri(@"http://www.test.com");
+    options.Organization = "Test";
+    options.Bucket = "Test";
+    options.Token = "Test";
+})
+.AddPrometheusAppMetrics();
 ```
 
 <br>
