@@ -41,6 +41,7 @@ public class HttpStatusCodesCounterMiddleware
                     "user",
                     "status",
                     "status_code",
+                    "request_id"
                 },
                 new[]
                 {
@@ -48,7 +49,8 @@ public class HttpStatusCodesCounterMiddleware
                     context.Request.Path.Value,
                     context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous",
                     Enum.GetName(typeof(HttpStatusCode), context.Response.StatusCode),
-                    context.Response.StatusCode.ToString()
+                    context.Response.StatusCode.ToString(),
+                    context.TraceIdentifier
                 }
             );
 
@@ -74,6 +76,7 @@ public class HttpStatusCodesCounterMiddleware
                     "user",
                     "status",
                     "status_code",
+                    "request_id"
                 },
                 new[]
                 {
@@ -81,7 +84,8 @@ public class HttpStatusCodesCounterMiddleware
                     context.Request.Path.Value,
                     context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous",
                     HttpStatusCode.InternalServerError.ToString(),
-                    ((int)HttpStatusCode.InternalServerError).ToString()
+                    ((int)HttpStatusCode.InternalServerError).ToString(),
+                    context.TraceIdentifier
                 }
             );
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CtnEe71PBu9eRxE3VnteLs09PiibkBmlQawIur3bakg64pAKmHpxmgWzBrdwGju/KywZwD19lPS9bTqKRDhqDg==",
+  "dgSpecHash": "mAnXsnjB1WdFANYZi5+obx6yuKIvoZXIO/rAM/36CMw5/0UydB8DJLSkqf1DccTHY/QOqsd2/f/4cqa3X5yRhw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Joao\\Documents\\Projects\\JF91\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7\\JF91.AppMetrics.InfluxDb2WithPrometheus.Net7.csproj",
   "expectedPackageFiles": [
@@ -56,7 +56,7 @@
     "C:\\Users\\Joao\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
     "C:\\Users\\Joao\\.nuget\\packages\\system.servicemodel.primitives\\4.5.3\\system.servicemodel.primitives.4.5.3.nupkg.sha512",
     "C:\\Users\\Joao\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\Joao\\.nuget\\packages\\jf91.appmetrics.influxdb2withprometheus\\1.0.2\\jf91.appmetrics.influxdb2withprometheus.1.0.2.nupkg.sha512"
+    "C:\\Users\\Joao\\.nuget\\packages\\jf91.appmetrics.influxdb2withprometheus\\1.0.4\\jf91.appmetrics.influxdb2withprometheus.1.0.4.nupkg.sha512"
   ],
   "logs": []
 }

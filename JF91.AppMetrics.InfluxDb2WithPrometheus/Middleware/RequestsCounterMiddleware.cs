@@ -35,13 +35,17 @@ public class RequestsCounterMiddleware
                 {
                     "method",
                     "path",
-                    "user"
+                    "user",
+                    "request_id",
+                    "status_code"
                 },
                 new[]
                 {
                     context.Request.Method,
                     context.Request.Path.Value,
-                    context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
+                    context.User.GetEmail() ?? context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous",
+                    context.TraceIdentifier,
+                    context.Response?.StatusCode.ToString() ?? "Unknown"
                 }
             );
 

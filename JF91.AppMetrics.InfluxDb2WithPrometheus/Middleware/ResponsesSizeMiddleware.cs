@@ -50,14 +50,16 @@ public class ResponsesSizeMiddleware
                     {
                         "method",
                         "path",
-                        "user"
+                        "user",
+                        "request_id"
                     },
                     new[]
                     {
                         context.Request.Method,
                         context.Request.Path.Value,
                         context.User.GetEmail() ??
-                        context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous"
+                        context.User.GetName() ?? context.User.GetUsername() ?? "Anonymous",
+                        context.TraceIdentifier
                     }
                 );
 

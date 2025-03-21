@@ -857,7 +857,7 @@
           }
         }
       },
-      "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.2": {
+      "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.4": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -2168,7 +2168,7 @@
         "version.txt"
       ]
     },
-    "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.2": {
+    "JF91.AppMetrics.InfluxDb2WithPrometheus/1.0.4": {
       "type": "project",
       "path": "../JF91.AppMetrics.InfluxDb2WithPrometheus/JF91.AppMetrics.InfluxDb2WithPrometheus.csproj",
       "msbuildProject": "../JF91.AppMetrics.InfluxDb2WithPrometheus/JF91.AppMetrics.InfluxDb2WithPrometheus.csproj"
@@ -2176,7 +2176,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "JF91.AppMetrics.InfluxDb2WithPrometheus >= 1.0.2",
+      "JF91.AppMetrics.InfluxDb2WithPrometheus >= 1.0.4",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -2264,7 +2264,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
